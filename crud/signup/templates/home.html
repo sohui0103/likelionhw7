@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,10 @@
 </head>
 <body>
     <h1>Signup Project</h1>
+    <div>
+        <img src="{% static 'IMG_0781.JPG' %}" height="400" alt="강이사진">
+        <br>
+    </div>
     <div>
         <a href="{% url 'new' %}">Write Your Information</a>
     </div>
@@ -23,3 +31,4 @@
     
 </body>
 </html>
+{% endblock %}

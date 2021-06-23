@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block contents %}
 <h1>Write Your Information</h1>
 
 <form action="{% url 'create' %}" method="POST">
@@ -8,3 +11,4 @@
     자기소개: <textarea name="introduce" cols="30" rows="10"></textarea>
     <button type="submit">Join</button>
 </form>
+{% endblock %}
